@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEYFLOW - Typing Master</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">KEY<span>FLOW</span></div>
+    <div class="header-label">TYPING MASTER / 2026</div>
+</header>
+
+<main class="container">
+
+    <section class="intro">
+        <p class="tag">YOUR PERSONAL TYPING TRAINER</p>
+        <h1>Master your <span>keyboard.</span></h1>
+        <p class="subtitle">
+            Train your fingers. Improve your speed.
+            Become a typing master.
+        </p>
+    </section>
+
+    <section class="stats">
+        <div class="stat-card">
+            <p>SCORE</p>
+            <h2 id="score">0</h2>
+        </div>
+
+        <div class="stat-card">
+            <p>ACCURACY</p>
+            <h2 id="accuracy">100%</h2>
+        </div>
+
+        <div class="stat-card">
+            <p>COMBO</p>
+            <h2 id="combo">0</h2>
+        </div>
+
+        <div class="stat-card">
+            <p>WPM</p>
+            <h2 id="wpm">0</h2>
+        </div>
+    </section>
+
+    <section class="game-card">
+
+        <div class="game-top">
+            <div>
+                <h2>Typing Challenge</h2>
+                <p>Press the falling keys</p>
+            </div>
+
+            <div class="timer" id="timer">60 SEC</div>
+        </div>
+
+        <div class="game-area">
+            <canvas id="game" width="800" height="420"></canvas>
+        </div>
+
+        <div class="game-controls">
+            <button id="startBtn" onclick="startGame()">
+                START GAME
+            </button>
+
+            <button class="reset-btn" onclick="resetGame()">
+                RESET
+            </button>
+        </div>
+
+        <p id="message">READY TO START?</p>
+
+    </section>
+
+    <section class="keyboard-section">
+
+        <div class="section-heading">
+            <div>
+                <p class="tag">FINGER POSITION</p>
+                <h2>Know your keys.</h2>
+            </div>
+            <p class="keyboard-tip">Place your fingers on the home row.</p>
+        </div>
+
+        <div class="keyboard">
+
+            <div class="key left-pinky" data-key="a">
+                <span>A</span>
+                <small>PINKY</small>
+            </div>
+
+            <div class="key left-ring" data-key="s">
+                <span>S</span>
+                <small>RING</small>
+            </div>
+
+            <div class="key left-middle" data-key="d">
+                <span>D</span>
+                <small>MIDDLE</small>
+            </div>
+
+            <div class="key left-index" data-key="f">
+                <span>F</span>
+                <small>INDEX</small>
+            </div>
+
+            <div class="key right-index" data-key="j">
+                <span>J</span>
+                <small>INDEX</small>
+            </div>
+
+            <div class="key right-middle" data-key="k">
+                <span>K</span>
+                <small>MIDDLE</small>
+            </div>
+
+            <div class="key right-ring" data-key="l">
+                <span>L</span>
+                <small>RING</small>
+            </div>
+
+            <div class="key right-pinky" data-key=";">
+                <span>;</span>
+                <small>PINKY</small>
+            </div>
+
+        </div>
+
+        <div class="finger-info">
+            <div><span class="dot purple"></span> Left hand</div>
+            <div><span class="dot cyan"></span> Right hand</div>
+            <div><span class="dot yellow"></span> Index fingers: F / J</div>
+        </div>
+
+    </section>
+
+    <footer>
+        KEYFLOW © 2026 — TYPE WITH CONFIDENCE.
+    </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
